@@ -2,6 +2,7 @@
 #### Contains configuration files about : 
 - urxvt 
 - ranger 
+- zsh
 - bash 
 
 ## Screenshots
