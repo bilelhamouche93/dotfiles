@@ -3,6 +3,7 @@
 - urxvt 
 - ranger 
 - zsh
+- qutebrowser
 - bash 
 
 ## Screenshots
