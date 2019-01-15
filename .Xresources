@@ -7,7 +7,7 @@ URxvt.externalBorder:      0
 !URxvt.termName:         rxvt-256color
 URxvt.iso14755:         False
 ! Using Xft
-URxvt*font:           xft:Inconsolata:size=12
+URxvt*font:           xft:Inconsolata for Powerline:size=12
 ! Set the style of the scrollbar: rxvt (default), plain, next, xterm
 URxvt.scrollstyle: rxvt
 ! To disable the scrollbar
