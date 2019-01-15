@@ -1,0 +1,57 @@
+
+URxvt.internalBorder:      0
+URxvt.externalBorder:      0
+
+
+
+!URxvt.termName:         rxvt-256color
+URxvt.iso14755:         False
+! Using Xft
+URxvt*font:           xft:Inconsolata:size=12
+! Set the style of the scrollbar: rxvt (default), plain, next, xterm
+URxvt.scrollstyle: rxvt
+! To disable the scrollbar
+URxvt.scrollBar:          false
+URxvt*background: #0f0f0f
+URxvt*foreground: #c8c8c8
+
+!black
+URxvt*color0:  #251f1f
+URxvt*color8:  #5e5e5e
+!red
+URxvt*color1:  #eb4509
+URxvt*color9:  #eb4509
+!green
+URxvt*color2:  #94e76b
+URxvt*color10: #95e76b
+!yellow
+URxvt*color3:  #ffac18
+URxvt*color11: #ffac18
+!blue
+URxvt*color4:  #46aede
+URxvt*color12: #46aede
+!magenta
+URxvt*color5:  #e32c57
+URxvt*color13: #e32c57
+!cyan
+URxvt*color6:  #d6dbac
+URxvt*color14: #d6dbac
+!white
+URxvt*color7:  #efefef
+URxvt*color15: #efefef
+
+!icons:
+!Snownews*iconFile: /usr/local/share/snownews/snownews_logo.32x32.png
+!MOC*iconFile: /usr/local/share/moc/moc_logo.32x32.png
+!URxvt.iconFile: /usr/share/icons/gnome/32x32/apps/terminal.png
+
+!secondary wheel
+URxvt*secondaryWheel: true
+
+!-*- Perl extensions -*
+! tabbed: tabs support
+! matcher: url parse
+URxvt.perl-ext-common:default,matcher
+URxvt.url-launcher:   /usr/bin/firefox
+URxvt.underlineURLs:  True
+URxvt.matcher.button: 1
