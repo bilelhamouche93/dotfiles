@@ -6,7 +6,7 @@
 - qutebrowser
 - bash 
 
-## Sync the files with git
+## Sync the files with github
 To run it automaticaly run these commands:
 ```
 $ dotfiles (which is just an alias for a longer script, see .zshrc)
