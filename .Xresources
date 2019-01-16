@@ -1,4 +1,4 @@
-
+!URxvt.letterSpace: 0 thought it fixed the zsh icons not showing
 URxvt.internalBorder:      0
 URxvt.externalBorder:      0
 
@@ -7,7 +7,9 @@ URxvt.externalBorder:      0
 !URxvt.termName:         rxvt-256color
 URxvt.iso14755:         False
 ! Using Xft
-URxvt*font:           xft:Inconsolata for Powerline:size=12
+URxvt*font:           xft:Inconsolata for Powerline:size=12,xft:Inconsolata:size=12
+!URxvt*font:           xft:Inconsolata:size=12
+
 ! Set the style of the scrollbar: rxvt (default), plain, next, xterm
 URxvt.scrollstyle: rxvt
 ! To disable the scrollbar
@@ -15,7 +17,7 @@ URxvt.scrollBar:          false
 URxvt*background: #0f0f0f
 URxvt*foreground: #c8c8c8
 
-!black
+!blacks
 URxvt*color0:  #251f1f
 URxvt*color8:  #5e5e5e
 !red
