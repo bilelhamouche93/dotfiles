@@ -12,6 +12,9 @@ To run it automaticaly run these commands:
 $ dotfiles (which is just an alias for a longer script)
 ```
 ```
+$ cd ~/myprojects/git/dotfiles/
+```
+```
 $ git add --all
 ```
 ```
