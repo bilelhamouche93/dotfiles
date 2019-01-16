@@ -11,11 +11,14 @@
 
 To run it automaticaly run these commands:
 ```
-$dotfiles (which is just an alias for a longer script)
+$ dotfiles (which is just an alias for a longer script)
 ```
-$git add --all
 ```
-$git commit -m "write down a commit message"
+$ git add --all
 ```
-$git push
+```
+$ git commit -m "write down a commit message"
+```
+```
+$ git push
 ```
