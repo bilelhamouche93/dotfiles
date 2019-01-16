@@ -9,7 +9,7 @@
 ## Sync the files with git
 To run it automaticaly run these commands:
 ```
-$ dotfiles (which is just an alias for a longer script)
+$ dotfiles (which is just an alias for a longer script, see .zshrc)
 ```
 ```
 $ cd ~/myprojects/git/dotfiles/
