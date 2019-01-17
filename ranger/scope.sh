@@ -114,6 +114,7 @@ handle_image() {
         #     # Thumbnail
         #     ffmpegthumbnailer -i "${FILE_PATH}" -o "${IMAGE_CACHE_PATH}" -s 0 && exit 6
         #     exit 1;;
+        # found this one on reddit : <<ffmpegthumbnailer -i "$fpath" -o "${cached//.jpg}" -s 0 && exit 6 || exit 1;;>>
         # PDF
         # application/pdf)
         #     pdftoppm -f 1 -l 1 \
@@ -193,6 +194,8 @@ handle_mime() {
 
         # Video and audio
         video/* | audio/*)
+        ffmpegthumbnailer -i "${FILE_PATH}" -o "${IMAGE_CACHE_PATH}" -s 0 && exit 6
+        #     exit 1;;
             mediainfo "${FILE_PATH}" && exit 5
             exiftool "${FILE_PATH}" && exit 5
             exit 1;;
