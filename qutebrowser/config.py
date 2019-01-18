@@ -1434,7 +1434,6 @@ c.tabs.width = '2%'
 ## Page to open if :open -t/-b/-w is used without URL. Use `about:blank`
 ## for a blank page.
 ## Type: FuzzyUrl
-c.url.default_page = 'https://google.com/'
 
 ## URL segments where `:navigate increment/decrement` will search for a
 ## number.
@@ -1461,11 +1460,10 @@ c.url.default_page = 'https://google.com/'
 ## used by prepending the search engine name to the search term, e.g.
 ## `:open google qutebrowser`.
 ## Type: Dict
-c.url.searchengines = {'DEFAULT': 'https://google.com/search?q={}'}
+
 
 ## Page(s) to open at the start.
 ## Type: List of FuzzyUrl, or FuzzyUrl
-c.url.start_pages = ['https://google.com']
 
 ## URL parameters to strip with `:yank url`.
 ## Type: List of String
@@ -1784,5 +1782,26 @@ c.window.hide_decoration = True
 # config.bind('n', 'prompt-accept no', mode='yesno')
 # config.bind('y', 'prompt-accept yes', mode='yesno')
 
+
+## My modifications -------------------------------------------
 ## Binding i added (sam)
-config.bind('<Ctrl-Shift-y>', 'hint links spawn --detach mpv --force-window yes {hint-url}')
+config.bind('<Ctrl-Shift-m>', 'hint links spawn --detach mpv --force-window yes {hint-url}')
+
+# bind * hint links spawn tsp youtube-dl -o "~/downloads/%(title)s.%(ext)s" --restrict-filenames {hint-url}
+config.bind('<Ctrl-Shift-y>', 'hint links spawn youtube-dl -o "~/downloads/youtube/%(title)s.%(ext)s" {hint-url}')
+
+config.bind('<Ctrl-Alt-y>', 'hint links spawn youtube-dl -o "~/downloads/youtube/%(title)s.%(ext)s" -c -x --audio-format mp3 --audio-quality 0 {hint-url}')
+
+## Unbinding ( binding i removed ) 
+config.unbind('q')
+#config.unbind('z')
+config.unbind('<Ctrl-v>')
+
+## default page, search engines and stuff like that
+c.url.default_page = 'https://google.com/'
+c.url.searchengines = {'DEFAULT': 'https://google.com/search?q={}','g': 'https://google.com/search?q={}','gi': 'https://www.google.com/search?q={}&tbm=isch','yt': 'https://youtube.com/search?q={}'}
+c.url.start_pages = ['https://google.com']
+
+
+
+
