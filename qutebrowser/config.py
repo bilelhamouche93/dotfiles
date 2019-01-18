@@ -1783,3 +1783,6 @@ c.window.hide_decoration = True
 # config.bind('<Return>', 'prompt-accept', mode='yesno')
 # config.bind('n', 'prompt-accept no', mode='yesno')
 # config.bind('y', 'prompt-accept yes', mode='yesno')
+
+## Binding i added (sam)
+config.bind('<Ctrl-Shift-y>', 'hint links spawn --detach mpv --force-window yes {hint-url}')
