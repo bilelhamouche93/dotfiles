@@ -1783,14 +1783,22 @@ c.window.hide_decoration = True
 # config.bind('y', 'prompt-accept yes', mode='yesno')
 
 
-## My modifications -------------------------------------------
-## Binding i added (sam)
-config.bind('<Ctrl-Shift-m>', 'hint links spawn --detach mpv --force-window yes {hint-url}')
+## ---------------------------------------------------- My modifications -----------------------------------------------------------------------
 
-# bind * hint links spawn tsp youtube-dl -o "~/downloads/%(title)s.%(ext)s" --restrict-filenames {hint-url}
-config.bind('<Ctrl-Shift-y>', 'hint links spawn youtube-dl -o "~/downloads/youtube/%(title)s.%(ext)s" {hint-url}')
+# watch video in mpv    
+config.bind('<Ctrl-Shift-v>', 'hint links spawn --detach mpv --force-window yes {hint-url}')
+config.bind('<Ctrl-Alt-v>', 'spawn mpv {url}')
+# listening to audio in mpv
+config.bind('<Ctrl-Shift-l>', 'hint links spawn --detach mpv --force-window yes {hint-url} --no-video')
 
-config.bind('<Ctrl-Alt-y>', 'hint links spawn youtube-dl -o "~/downloads/youtube/%(title)s.%(ext)s" -c -x --audio-format mp3 --audio-quality 0 {hint-url}')
+# Download video     
+config.bind('<Ctrl-Shift-y>', 'hint links spawn youtube-dl -o "~/videos/%(title)s.%(ext)s" {hint-url}')
+config.bind('<Ctrl-Alt-y>', 'spawn youtube-dl -o "~/videos/%(title)s.%(ext)s" {url}')
+# Download audio
+config.bind('<Ctrl-Shift-m>', 'hint links spawn youtube-dl -o "~/music/%(title)s.%(ext)s" -c -x --audio-format mp3 --audio-quality 0 {hint-url}')
+config.bind('<Ctrl-Alt-m>', 'spawn youtube-dl -o "~/music/%(title)s.%(ext)s" -c -x --audio-format mp3 --audio-quality 0 {url}')
+
+#to add a message , add this after the command, :  ;; message-info downloading
 
 ## Unbinding ( binding i removed ) 
 config.unbind('q')
@@ -1801,6 +1809,9 @@ config.unbind('<Ctrl-v>')
 c.url.default_page = 'https://google.com/'
 c.url.searchengines = {'DEFAULT': 'https://google.com/search?q={}','g': 'https://google.com/search?q={}','gi': 'https://www.google.com/search?q={}&tbm=isch','yt': 'https://youtube.com/search?q={}'}
 c.url.start_pages = ['https://google.com']
+
+# Dark theme for messenger.com
+config.bind('xx', 'config-cycle content.user_stylesheets ~/.config/qutebrowser/styles/dark-facebook-messenger-theme.css ""')
 
 
 
