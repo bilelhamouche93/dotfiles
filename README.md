@@ -5,6 +5,7 @@
 - zsh
 - qutebrowser
 - bash 
+- VIM
 
 ## Sync the files with github
 To run it automaticaly run these commands:
