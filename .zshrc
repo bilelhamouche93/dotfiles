@@ -106,6 +106,6 @@ alias rm='rm -i'
 alias dfree='df /dev/sda1'
 alias feh='feh --borderless --scale-down --auto-zoom -g 800x600'
 alias ripme='cd software/ && java -jar ripme.jar'
-alias dotfiles='cp ~/.zshrc ~/myprojects/git/dotfiles/ && cp ~/.bashrc ~/myprojects/git/dotfiles/ && cp ~/.Xresources ~/myprojects/git/dotfiles/ && cp -r ~/.config/ranger/ ~/myprojects/git/dotfiles/ && cp -r ~/.config/qutebrowser/*config.* ~/myprojects/git/dotfiles/qutebrowser/'
+alias dotfiles='cp ~/.zshrc ~/myprojects/git/dotfiles/ && cp ~/.bashrc ~/myprojects/git/dotfiles/ && cp ~/.Xresources ~/myprojects/git/dotfiles/ && cp -r ~/.config/ranger/ ~/myprojects/git/dotfiles/ && cp -r ~/.config/qutebrowser/*config.* ~/myprojects/git/dotfiles/qutebrowser/ && cp -r ~/.config/qutebrowser/styles/ ~/myprojects/git/dotfiles/qutebrowser/'
 
 neofetch
