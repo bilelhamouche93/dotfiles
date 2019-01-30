@@ -3,9 +3,10 @@
 - urxvt 
 - ranger 
 - zsh
-- qutebrowser
-- bash 
+- qutebrowser 
+- bash (not updated sinced changing the shell to zsh)
 - VIM
+- moc (mocp: Music On Console Player)
 
 ## Sync the files with github
 To run it automaticaly run these commands:
