@@ -1,3 +1,8 @@
+! arabic support
+URxvt*perl-ext: bidi
+URxvt*bidi.enabled: 1
+
+
 !URxvt.letterSpace: 0 thought it fixed the zsh icons not showing
 URxvt.internalBorder:      0
 URxvt.externalBorder:      0
@@ -7,7 +12,17 @@ URxvt.externalBorder:      0
 !URxvt.termName:         rxvt-256color
 URxvt.iso14755:         False
 ! Using Xft
-URxvt*font:           xft:Inconsolata for Powerline:size=12,xft:Inconsolata:size=12
+URxvt*font:           xft:Inconsolata for Powerline:size:12,\
+                      xft:Inconsolata:size:12,\
+                      xft:Fantasque Sans Mono:size:12,\
+                      xft:DejaVu Sans Mono,\
+                      xft:IPAGothic,\
+                      xft:FreeMono,\
+                      xft:FreeSans,\
+                      xft:Symbola,\
+                      -*-unifont-*-*-*-*-*-*-*-*-*-*-*-*
+
+!URxvt*font:           xft:Inconsolata for Powerline:size=12,\
 !URxvt*font:           xft:Inconsolata:size=12
 
 ! Set the style of the scrollbar: rxvt (default), plain, next, xterm
