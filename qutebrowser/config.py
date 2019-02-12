@@ -1811,8 +1811,8 @@ c.url.searchengines = {'DEFAULT': 'https://google.com/search?q={}','g': 'https:/
 c.url.start_pages = ['https://google.com']
 
 # Dark theme for messenger.com
-config.bind('xm', 'config-cycle content.user_stylesheets ~/.config/qutebrowser/styles/dark-facebook-messenger-theme.css ""')
-config.bind('xx', 'config-cycle content.user_stylesheets ~/.config/qutebrowser/styles/solarized_dark.css ""')
+config.bind('xc', 'config-cycle content.user_stylesheets ~/.config/qutebrowser/styles/solarized_dark.css ""')
+config.bind('xx', 'config-cycle content.user_stylesheets ~/.config/qutebrowser/styles/Clear_dark_facebook_by_book777.css ""')
 
 
 

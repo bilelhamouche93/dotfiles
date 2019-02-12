@@ -1,6 +1,6 @@
 ! arabic support
-URxvt*perl-ext: bidi
-URxvt*bidi.enabled: 1
+!URxvt*perl-ext: bidi
+!URxvt*bidi.enabled: 1
 
 
 !URxvt.letterSpace: 0 thought it fixed the zsh icons not showing
