@@ -110,5 +110,8 @@ alias dotfiles='cp ~/.zshrc ~/myprojects/git/dotfiles/ && cp ~/.bashrc ~/myproje
 alias ytp='cd ~/myprojects/git/dotfiles/scripts/ && ./ytp'
 alias ytc='mpsyt'
 alias trans='trans -no-bidi'
+alias fehr='feh -rzF --borderless --scale-down --auto-zoom -g 800x600 --action "dolphin --select '%f'"'
+alias fehr5='feh -rzFD5 --borderless --scale-down --auto-zoom -g 800x600 --action "dolphin --select '%f'"'
+alias fehr10='feh -rzFD10 --borderless --scale-down --auto-zoom -g 800x600 --action "dolphin --select '%f'"'
 
 neofetch
