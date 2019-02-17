@@ -1784,6 +1784,9 @@ c.window.hide_decoration = True
 
 
 ## ---------------------------------------------------- My modifications -----------------------------------------------------------------------
+# Hint images and download / hint links download
+config.bind('<*>', 'hint images download')
+config.bind('<ù>', 'hint links download')
 
 # watch video in mpv    
 config.bind('<Ctrl-Shift-v>', 'hint links spawn --detach mpv --force-window yes {hint-url}')
