@@ -138,31 +138,5 @@
 #sharpen=5
 
 
-# added by me sam :
+# added by me sam : 
 ytdl-format=bestvideo[height<=?720]+bestaudio/best+[vcodec!=vp9]
-ytdl-raw-options=no-check-certificate=
-
-#Screenshot
-screenshot-format=png
-screenshot-high-bit-depth=yes
-screenshot-png-compression=1
-screenshot-jpeg-quality=95
-screenshot-directory="/home/sam/pictures/mpv/"
-screenshot-template="%f-%wH.%wM.%wS.%wT-#%#00n"
-
-#Volume
-volume=100
-volume-max=200
-
-#Cache
-cache-default=353600
-cache=353600
-cache-pause=no
-cache-secs=2.0
-
-
-#try
-hwdec=auto
-video-sync=display-resample
-interpolation=yes
-tscale=oversample
